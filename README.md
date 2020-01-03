@@ -1,0 +1,2 @@
+# Tradezoid
+We trade zoids.
