@@ -16,3 +16,5 @@
 - Docker
 
 Figure out: Robinhood API or Other Stock API
+
+Node Port: 42069
