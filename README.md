@@ -1,16 +1,18 @@
 # Tradezoid
 
-Searching through S&P 500 for safe buys
-Automatic Trading/Notifications?
-Manual Trading
-Visualization
-Crypto?
+## Requirements
 
-Platforms: Web App
-Framework: Node, Angular, Nest
-Database: Mongo
-Docker
+- Searching through S&P 500 for safe buys
+- Automatic Trading/Notifications?
+- Manual Trading
+- Visualization
+- Crypto?
 
-http calls to get stocks list and data
+## Stack
 
-Infrastructure SPA Served by Node Server - Node Business Logic Server - Database Serve
+- Platforms: Web App
+- Framework: Node, Angular, Nest
+- Database: Mongo
+- Docker
+
+Figure out: Robinhood API or Other Stock API
