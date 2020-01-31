@@ -11,7 +11,10 @@
     "start-all": "npm-run-all --parallel start-nest start-angular",
     "install-nest": "cd server && npm install",
     "install-angular": "cd public && npm install",
-    "install-all": "npm-run-all --parallel install-nest install-angular"
+    "install-all": "npm-run-all --parallel install-nest install-angular",
+    "production-nest": "cd server && npm run production",
+    "production-angular": "cd public && npm run production",
+    "start-prod": "npm run install-all && npm run production-angular && npm run production-nest"
   },
   "repository": {
     "type": "git",
