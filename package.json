@@ -8,10 +8,10 @@
     "start": "npm install && npm run install-all && npm run start-all",
     "start-nest": "cd server && npm start",
     "start-angular": "cd public && npm start",
-    "start-all": "npm-run-all start-nest start-angular",
+    "start-all": "npm-run-all --parallel start-nest start-angular",
     "install-nest": "cd server && npm install",
     "install-angular": "cd public && npm install",
-    "install-all": "npm-run-all install-nest install-angular"
+    "install-all": "npm-run-all --parallel install-nest install-angular"
   },
   "repository": {
     "type": "git",
