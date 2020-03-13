@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { FormControl } from "@angular/forms";
 import { LoginService } from "./login.service";
 
 @Component({
@@ -7,13 +8,16 @@ import { LoginService } from "./login.service";
   styleUrls: ["./login.component.scss"]
 })
 export class LoginComponent implements OnInit {
+  passwordControl = new FormControl("");
+  usernameControl = new FormControl("");
+
   constructor(public service: LoginService) {}
 
   ngOnInit() {}
 
   login() {
-    let username = "Foobar";
-    let password = "Test";
+    const username = this.usernameControl.value;
+    const password = this.passwordControl.value;
     this.service.login(username, password);
   }
 }

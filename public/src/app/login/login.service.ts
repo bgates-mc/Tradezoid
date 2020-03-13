@@ -8,7 +8,7 @@ export class LoginService {
   constructor(private http: HttpClient) {}
 
   login(username, password) {
-    console.log('username, password: ', username, password);
+    console.log("username, password: ", username, password);
     return this.http.get("google.com");
   }
 }
