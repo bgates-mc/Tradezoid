@@ -13,7 +13,7 @@ export class ExampleComponent implements OnInit {
   ngOnInit() {
 
     function incrementValue() {
-      let value = parseInt(document.getElementById('stockQuantity').value, 1);
+      let value = parseInt(document.getElementById('stockQuantity').value, 10);
       value = isNaN(value) ? 0 : value;
       value++;
       document.getElementById('stockQuantity').value = value;
