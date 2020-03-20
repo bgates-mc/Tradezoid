@@ -1,18 +1,18 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { MatInputModule } from "@angular/material/input";
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-<<<<<<< Updated upstream
-=======
-import { ExampleComponent } from "./example/example.component";
-import { LoginComponent } from "./login/login.component";
-import { numberinputComponent } from "./number-input/numberinput.component";
->>>>>>> Stashed changes
+import { NumberInputComponent } from "./number-input/numberinput.component"
+
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, NumberInputComponent],
+  imports: [BrowserModule, AppRoutingModule, MatInputModule, MatFormFieldModule, MatButtonModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

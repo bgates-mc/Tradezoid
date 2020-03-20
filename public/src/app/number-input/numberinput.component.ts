@@ -1,24 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { MatInputModule } from "@angular/material/input";
 
 @Component({
-  selector: 'app-example',
-  templateUrl: './example.component.html',
-  styleUrls: ['./example.component.scss']
+  selector: 'numberinput',
+  templateUrl: './numberinput.component.html',
+  styleUrls: ['./numberinput.component.scss']
 })
-export class ExampleComponent implements OnInit {
+export class NumberInputComponent implements OnInit {
+  value = 0;
+ 
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-
-    function incrementValue() {
-      let value = parseInt(document.getElementById('stockQuantity').value, 10);
-      value = isNaN(value) ? 0 : value;
-      value++;
-      document.getElementById('stockQuantity').value = value;
-    }
-
+  incrementValue() {
+    this.value++;
   }
 
 }
