@@ -3,6 +3,12 @@ import { NgModule } from "@angular/core";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+<<<<<<< Updated upstream
+=======
+import { ExampleComponent } from "./example/example.component";
+import { LoginComponent } from "./login/login.component";
+import { numberinputComponent } from "./number-input/numberinput.component";
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [AppComponent],
