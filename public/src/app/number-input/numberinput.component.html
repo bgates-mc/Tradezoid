@@ -1,0 +1,8 @@
+<form>
+    <button mat-raised-button>-</button>
+    <mat-form-field appearance="outline">
+        <mat-label>Number of Shares</mat-label>
+        <input matInput [formControl]="valueControl" placeholder="0" class="quantity-field" /> 
+    </mat-form-field>
+    <button mat-raised-button (click)="incrementValue()">+</button>
+</form>

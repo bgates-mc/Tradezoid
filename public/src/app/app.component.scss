@@ -1,0 +1,60 @@
+@media only screen and (max-width: 500px) {
+ .flexbox {
+   display: flex;
+   flex-direction: column;
+ } 
+ 
+ .stockGraph {
+   order: 2; 
+ } 
+}
+
+
+@media only screen and (min-width: 501px) {
+  .stockSearch {
+    float: left;
+    width: 49%;
+  }
+  
+  .stockGraph {
+    float: right;
+    width: 49%;
+  }  
+  
+  .stockActions {
+    clear: both;
+    float: right; 
+    width: 49%
+  }
+}
+
+
+
+.fbox {
+  box-sizing: border-box;  
+  padding: 2em;
+  background: #e0e0e0;  
+  color: #000;   
+  margin-bottom: 1em;
+}
+
+.stockSearch {
+  height: 8em;
+}
+
+.stockGraph {
+  height: 12em;
+}
+
+.fbox h2 {
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  bottom: 0;
+  color: #000;   
+}
+
+h1 {
+  margin-bottom: 3em;
+}
+
