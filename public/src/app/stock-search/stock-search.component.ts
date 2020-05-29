@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FormControl } from "@angular/forms";
-import {MatIconModule} from '@angular/material/icon'; 
+import { FormControl } from '@angular/forms';
+import { debounceTime } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-stock-search',
@@ -8,19 +9,19 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrls: ['./stock-search.component.scss']
 })
 export class StockSearchComponent implements OnInit {
-  @Input() valueControl;
+  @Input() valueControl = new FormControl('SPY');
  
   constructor() {}
 
   ngOnInit() {
-    this.valueControl.valueChanges.subscribe(value => {
+    this.valueControl.valueChanges.pipe(debounceTime(500)).subscribe(value => {
       console.log("Value: ", value);
     });
   }
 
   searchStocks() {
     const currentValue = this.valueControl.value;
-    console.log("Value:", currentValue)
+    console.log("Log Value:", currentValue)
   }
 
 }
